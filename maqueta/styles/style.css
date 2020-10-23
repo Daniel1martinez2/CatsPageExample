@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+}
+@keyframes alo{
+    from{
+        transform: rotate(0deg) ;
+        -webkit-transform: rotate(0deg) ;
+        -moz-transform: rotate(0deg) ;
+        -ms-transform: rotate(0deg) ;
+        -o-transform: rotate(0deg) ;
+}
+25%{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+to{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
+header{
+   
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 40px;
+    /*--flex--*/
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.links{
+    width: 50%;
+    height: 20px;
+    /*--flex--*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.linkA{
+    color: black;
+    transition: 0.5s ;
+    -webkit-transition: 0.5s ;
+    -moz-transition: 0.5s ;
+    -ms-transition: 0.5s ;
+    -o-transition: 0.5s ;
+}
+header nav:hover a{
+    transform: scale(1) ;
+    -webkit-transform: scale(1) ;
+    -moz-transform: scale(1) ;
+    -ms-transform: scale(1) ;
+    -o-transform: scale(1) ;
+    opacity: 0.2;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+header nav a:hover{
+    transform: scale(2) ;
+    -webkit-transform: scale(2) ;
+    -moz-transform: scale(2) ;
+    -ms-transform: scale(2) ;
+    -o-transform: scale(2) ;
+    opacity: 1;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+
+}
+.logo{
+    opacity: 0;
+    transition: opacity 230ms ease-in-out;
+    margin: 0 0 0 10px;
+    width: 50px;
+    height: 40px;
+    background-color: chocolate;
+    -webkit-transition: opacity 230ms ease-in-out;
+    -moz-transition: opacity 230ms ease-in-out;
+    -ms-transition: opacity 230ms ease-in-out;
+    -o-transition: opacity 230ms ease-in-out;
+}
+
+
+.logo:hover{
+    opacity: 1;
+}
+
+section{
+    background-color: rgb(223, 223, 223);
+    width: 100%;
+    height: 600px;
+
+     /*--flex--*/
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+}
+
+section div{
+    margin: 0;
+    background-color:darkolivegreen ;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+section article{
+    
+    background-color: darkseagreen;
+    width: 50%;
+    height: auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.test{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 242, 184);
+    
+}
+.test:hover{
+    animation: alo 1.5s ease-in-out;
+    -webkit-animation: alo 1.5s ease-in-out;
+}
+section aside{
+    background-color: khaki;
+    line-height: 40px;
+    padding: 10px;
+
+}
+section aside h1{
+    font-size: 50px; 
+    padding: 10px;
+
+}
+section article nav{
+    height: 100px;
+    background-color: indianred;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: height 230ms ease-in-out ;
+    -webkit-transition: height 230ms ease-in-out ;
+    -moz-transition: height 230ms ease-in-out ;
+    -ms-transition: height 230ms ease-in-out ;
+    -o-transition: height 230ms ease-in-out ;
+}
+section article nav:hover{
+    height: 200px;
+}
+
+.cats{
+    background-color: maroon;
+    color: mintcream;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.cats:hover{
+    opacity: 0.5;
+
+}
+ @media (max-width: 1240px){
+    section article nav {
+        background-color: navy;
+      
+    }
+  
+    .cats{
+        display: flex;
+        flex-direction: row;
+        width: 50px;
+        height: 50px;
+
+    }
+    section aside{
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    section aside h1{
+        font-size: 35px; 
+    }
+
+ }
+
+ @media (max-width: 700px){
+     section{
+         flex-direction: column;
+     }
+     section article{
+         width: 100%;
+         height: 50%;
+     }
+     section div{
+         width: 100%;
+         margin: 0;
+         height: 50%;
+     }
+     section aside{
+        line-height: 20px;
+    }
+
+     .test{
+        width: 100px;
+        height: 100px;
+      
+        
+    }
+
+ }
